@@ -1,6 +1,6 @@
 # Skill Manager | 技能管理器
 
-![Skill Manager Banner](./data/banner.png)
+![Skill Manager Banner](./data/banner.jpeg)
 
 
 > 为agent搜索、浏览和安装 31,767+ 个 github社区中Skill
