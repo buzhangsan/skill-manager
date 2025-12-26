@@ -77,21 +77,7 @@ Skill Manager 是一个 Claude Code skill管理工具，让你轻松发现和安
 
 
 
-## 命令行使用
-### 1. 搜索技能
 
-```bash
-cd skill-manager
-node index.js search "python testing"
-```
-
-### 2. 安装技能
-
-```bash
-node index.js install "python testing" 
-```
-
-就这么简单！
 
 ## 📦 包含内容
 
