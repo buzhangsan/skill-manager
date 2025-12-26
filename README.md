@@ -12,9 +12,8 @@ A comprehensive Claude Code skill manager that allows you to search, browse, and
 ✅ **GitHub Integration**: Direct integration with GitHub raw content API
 
 ## Community  
-
-[17136](https://github.com/17136)
-[Mo Ling Dream](https://x.com/MolingDream)
+[github:buzhangsan](https://github.com/buzhangsan)
+[x:buzhangsan](https://x.com/MolingDream)
 ![微信公众号交流群:agisir](./data/acc.png)
 
 ## Installation

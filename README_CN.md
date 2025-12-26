@@ -11,8 +11,8 @@ Skill Manager 是一个 Claude Code 技能管理工具，让你轻松发现和�
 
 ## 交流  
 
-[17136](https://github.com/17136)
-[Mo Ling Dream](https://x.com/MolingDream)
+[github:buzhangsan](https://github.com/buzhangsan)
+[x:buzhangsan](https://x.com/MolingDream)
 ![微信公众号交流群:agisir](./data/acc.png)
 
 ## ✨ 特性
