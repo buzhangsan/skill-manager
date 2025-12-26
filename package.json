@@ -1,0 +1,31 @@
+{
+  "name": "claude-skill-manager",
+  "version": "1.0.0",
+  "description": "Search, browse, and install Claude Code skills from a database of 31,767+ community skills",
+  "main": "index.js",
+  "bin": {
+    "skill-manager": "./index.js"
+  },
+  "scripts": {
+    "search": "node index.js search",
+    "install-skill": "node index.js install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "claude",
+    "claude-code",
+    "skills",
+    "ai",
+    "assistant",
+    "package-manager"
+  ],
+  "author": "Claude Skill Manager",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/skill-manager"
+  }
+}
