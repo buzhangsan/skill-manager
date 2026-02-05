@@ -46,6 +46,11 @@ function searchSkills(query, limit = 10) {
       score += 5;
     }
 
+    // Search in Chinese description
+    if (skill.description_cn && skill.description_cn.toLowerCase().includes(lowerQuery)) {
+      score += 5;
+    }
+
     // Search in author
     if (skill.author && skill.author.toLowerCase().includes(lowerQuery)) {
       score += 3;
