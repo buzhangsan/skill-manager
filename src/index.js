@@ -4,16 +4,25 @@ const fs = require('fs');
 const path = require('path');
 const https = require('https');
 const http = require('http');
+const zlib = require('zlib');
 const { execSync } = require('child_process');
 
 // Load skills database
 const SKILLS_DB_PATH = path.join(__dirname, '..', 'data', 'all_skills_with_cn.json');
+const SKILLS_DB_GZ_PATH = path.join(__dirname, '..', 'data', 'all_skills_with_cn.json.gz');
 let skillsDatabase = [];
 
 try {
-  const data = fs.readFileSync(SKILLS_DB_PATH, 'utf-8');
+  let data;
+  if (fs.existsSync(SKILLS_DB_GZ_PATH)) {
+    // console.log(`✓ Found compressed database: ${SKILLS_DB_GZ_PATH}`);
+    const compressed = fs.readFileSync(SKILLS_DB_GZ_PATH);
+    data = zlib.gunzipSync(compressed).toString('utf-8');
+  } else {
+    data = fs.readFileSync(SKILLS_DB_PATH, 'utf-8');
+  }
   skillsDatabase = JSON.parse(data);
-  console.log(`✓ Loaded ${skillsDatabase.length} skills from database`);
+  // console.log(`✓ Loaded ${skillsDatabase.length} skills from database`);
 } catch (error) {
   console.error(`✗ Failed to load skills database: ${error.message}`);
   process.exit(1);
